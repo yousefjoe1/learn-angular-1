@@ -1,0 +1,45 @@
+// Define the keyframes
+@keyframes floatUpDown {
+    0%, 100% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-4px);
+    }
+  }
+  
+  // Apply the animation to each image with staggered delays
+  .floating-icons {
+  
+    img {
+      animation: floatUpDown 2s ease-in-out infinite;
+    }
+  
+    img:nth-child(1) {
+      animation-delay: 0s;
+    }
+  
+    img:nth-child(2) {
+      animation-delay: 1.3s;
+    }
+  
+    img:nth-child(3) {
+      animation-delay: 1.6s;
+    }
+  }
+  
+
+  @keyframes tiltRotate {
+    0%, 100% {
+      transform: rotate(0deg)
+    }
+    25% {
+      transform: rotate(5deg)
+    }
+    75% {
+      transform: rotate(-5deg)
+    }
+  }
+  .rotating-icons {
+    animation: tiltRotate 4s ease-in-out infinite;
+  }
